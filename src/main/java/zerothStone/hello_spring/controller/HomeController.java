@@ -2,6 +2,7 @@ package zerothStone.hello_spring.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 class HomeController {
@@ -10,5 +11,5 @@ class HomeController {
     public String home() {
         return "home";
     }
-
 }
+

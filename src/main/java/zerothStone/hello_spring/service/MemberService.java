@@ -8,7 +8,6 @@ import zerothStone.hello_spring.repository.MemberRepository;
 import java.util.List;
 import java.util.Optional;
 
-
 public class MemberService {
     private final MemberRepository memberRepository;
 
@@ -33,7 +32,6 @@ public class MemberService {
     public List<Member> findMembers() {
         return memberRepository.findAll();
     }
-
     public Optional<Member> findOne(Long id) {
         return memberRepository.findById(id);
     }
