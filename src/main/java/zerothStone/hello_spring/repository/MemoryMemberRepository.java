@@ -1,6 +1,5 @@
 package zerothStone.hello_spring.repository;
 
-import org.springframework.stereotype.Repository;
 import zerothStone.hello_spring.domain.Member;
 
 import java.util.ArrayList;
@@ -9,12 +8,12 @@ import java.util.List;
 import java.util.Optional;
 
 public class MemoryMemberRepository implements MemberRepository {
-    private static HashMap<Long, Member> store = new HashMap<>();
+    private static final HashMap<Long, Member> store = new HashMap<>();
     private static Long sequence = 0L;
 
     @Override
     public Member save(Member member) {
-        member.setId(sequence++);
+        member.setId(++sequence);
         store.put(member.getId(), member);
         return member;
     }

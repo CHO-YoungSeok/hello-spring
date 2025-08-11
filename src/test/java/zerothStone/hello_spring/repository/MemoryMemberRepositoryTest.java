@@ -2,6 +2,7 @@ package zerothStone.hello_spring.repository;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
 import zerothStone.hello_spring.domain.Member;
 
 import java.util.List;

@@ -1,6 +1,5 @@
 package zerothStone.hello_spring.repository;
 
-import org.springframework.stereotype.Repository;
 import zerothStone.hello_spring.domain.Member;
 
 import java.util.List;
