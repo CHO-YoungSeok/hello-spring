@@ -32,11 +32,6 @@ public class JpaMemberRepository implements MemberRepository {
     }
 
     @Override
-    public void clearStore() {
-
-    }
-
-    @Override
     public Optional<Member> findByName(String name) {
         List<Member> result = em.createQuery(
                         "select m from Member m where m.name = :name", Member.class)

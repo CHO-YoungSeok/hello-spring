@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MemberServiceTest {
     MemberService memberService;
-    MemberRepository memberRepository;
+    MemoryMemberRepository memberRepository;
 
     @BeforeEach
     void beforeEach() {
