@@ -21,12 +21,12 @@ public class MemberServiceIntegrationTest {
     void 회원가입() throws Exception {
         //given
         Member member = new Member();
-        member.setName("hello");
+        member.setName("springTestMember777");
 
         //when
         Long savedId = memberService.join(member);
 
-        //then
+        //thenx
         Member findMember = memberService.findOne(savedId).get();
         assertEquals(member.getName(), findMember.getName());
     }
@@ -36,8 +36,8 @@ public class MemberServiceIntegrationTest {
         //Given
         Member member1 = new Member();
         Member member2 = new Member();
-        member1.setName("hello");
-        member2.setName("hello");
+        member1.setName("springTestMember777");
+        member2.setName("springTestMember777");
         memberService.join(member1);
 
         //When
