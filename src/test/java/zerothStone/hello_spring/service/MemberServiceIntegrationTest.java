@@ -43,7 +43,7 @@ public class MemberServiceIntegrationTest {
         //When
         IllegalStateException e = assertThrows(IllegalStateException.class,
                 () -> memberService.join(member2));
-        assertThat(e.getMessage()).isEqualTo("already exists");
+        assertThat(e.getMessage()).isEqualTo("Member already exists");
 
         //Then
     }
